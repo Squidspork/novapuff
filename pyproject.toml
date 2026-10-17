@@ -1,0 +1,26 @@
+[project]
+name = "novapuff"
+version = "0.1.0"
+description = "Puts a person's name on a demo and pops if those files change."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Hungry Nova Labs LLC" }]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = ["cryptography>=44"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+novapuff = "novapuff.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

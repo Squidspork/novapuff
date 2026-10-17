@@ -1,0 +1,2 @@
+The puffer sits still until you poke the demo.
+Then it puffs.
